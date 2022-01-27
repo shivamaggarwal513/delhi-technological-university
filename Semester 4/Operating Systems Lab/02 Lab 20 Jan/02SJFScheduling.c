@@ -1,57 +1,72 @@
 /* Program to implement of SJF scheduling */
 #include <stdio.h>
-#include <stdlib.h>
 
-int comparator(const void *a, const void *b)
+void swap(int *a, int *b) { int temp = *a; *a = *b; *b = temp; }
+
+void SJFScheduling(int n, int table[][6])
 {
-    return (*(int*)a - *(int*)b);
-}
-
-void SJFScheduling(int *burstTime, int n)
-{
-    qsort(burstTime, n, sizeof(int), comparator);
-    int *waitingTime = (int *)malloc(n * sizeof(int));
-    int *turnAroundTime = (int *)malloc(n * sizeof(int));
-
-    waitingTime[0] = 0;
-    turnAroundTime[0] = burstTime[0];
-    int totalWaitingTime = 0, totalTurnAroundTime = turnAroundTime[0];
-
-    for (int i = 1; i < n; i++)
-    {
-        waitingTime[i] = turnAroundTime[i - 1];
-        turnAroundTime[i] = waitingTime[i] + burstTime[i];
-        totalWaitingTime += waitingTime[i];
-        totalTurnAroundTime += turnAroundTime[i];
-    }
-
-    float averageWaitingTime = (float)totalWaitingTime / (float)n;
-    float averageTurnAroundTime = (float)totalTurnAroundTime / (float)n;
-
-    printf("\nS.No. \tBurst Time \tWaiting Time \tTurnAround Time \n");
     for (int i = 0; i < n; i++)
-        printf("%d. \t%d \t\t%d \t\t%d \n", i + 1, burstTime[i], waitingTime[i], turnAroundTime[i]);
+        for (int j = 0; j < n - i - 1; j++)
+            if (table[j][1] > table[j + 1][1])
+                for (int k = 0; k < 5; k++)
+                    swap(&table[j][k], &table[j + 1][k]);
+    
+    int temp, val, i, j, k, low;
+	table[0][3] = table[0][1] + table[0][2];
+	table[0][5] = table[0][2];
+	table[0][4] = 0;
 
-    printf("\nAverage waiting time: %.2f \n", averageWaitingTime);
-    printf("Average turn around time: %.2f \n", averageTurnAroundTime);
-
-    free(waitingTime);
-    free(turnAroundTime);
+	for (i = 1; i < n; i++)
+	{
+		temp = table[i - 1][3];
+		low = table[i][2];
+		for (j = i; j < n; j++)
+			if (temp >= table[j][1] && low >= table[j][2])
+				low = table[j][2], val = j;
+		
+		table[val][3] = temp + table[val][2];
+		table[val][5] = table[val][3] - table[val][1];
+		table[val][4] = table[val][5] - table[val][2];
+		
+		for (k = 0; k < 6; k++)
+			swap(&table[val][k], &table[i][k]);
+	}
 }
 
 int main()
 {
-    int n;
-    printf("Enter no. of processes: "); 
+    int n, i, table[10][6];
+    float avgWT = 0, avgTAT = 0;
+    printf("Enter no. of processes: ");
     scanf("%d", &n);
-    int *burstTime = (int *)malloc(n * sizeof(int));
-
-    printf("Enter burst times of %d processes: \n", n);
-    for (int i = 0; i < n; i++)
-        scanf("%d", &burstTime[i]);
     
-    SJFScheduling(burstTime, n);
+    printf("Enter %d process IDs: ", n);
+    for (i = 0; i < n; i++)
+        scanf("%d", &table[i][0]);
+    
+    printf("Enter %d arrival times: ", n);
+    for (i = 0; i < n; i++)
+        scanf("%d", &table[i][1]);
+    
+    printf("Enter %d burst times: ", n);
+    for (i = 0; i < n; i++)
+        scanf("%d", &table[i][2]);
+    
+    SJFScheduling(n, table);
+    
+    printf("\nPID \tArrival \tBurst \tWaiting \tTurnAround \n");
+    for (i = 0; i < n; i++)
+    {
+        printf("%d \t%d \t\t%d \t%d \t\t%d \n", table[i][0], table[i][1], table[i][2], table[i][4], table[i][5]);
+        avgWT += table[i][4];
+        avgTAT += table[i][5];
+    }
 
-    free(burstTime);
-    return 0;
+    avgWT = (float)avgWT / (float)n;
+    avgTAT = (float)avgTAT / (float)n;
+    
+    printf("\nAverage waiting time: %.2f \n", avgWT);
+    printf("Average turn around time: %.2f \n", avgTAT);
+        
+	return 0;
 }
