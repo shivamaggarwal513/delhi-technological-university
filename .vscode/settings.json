@@ -19,6 +19,7 @@
         "xlocale": "cpp",
         "xutility": "cpp",
         "cmath": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "stdio.h": "c"
     }
 }

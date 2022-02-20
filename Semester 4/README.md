@@ -6,3 +6,4 @@
   - [Lab 27 January](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%204/Operating%20Systems%20Lab/03%20Lab%2027%20Jan)
   - [Lab 03 February](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%204/Operating%20Systems%20Lab/04%20Lab%2003%20Feb)
   - [Lab 10 February](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%204/Operating%20Systems%20Lab/05%20Lab%2010%20Feb)
+  - [Lab 17 February](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%204/Operating%20Systems%20Lab/06%20Lab%2017%20Feb)
