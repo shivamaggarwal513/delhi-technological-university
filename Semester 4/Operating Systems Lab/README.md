@@ -7,4 +7,5 @@
 - Lab 10 February
 - Lab 17 February
 - Lab 24 February
-- Lab 03 March
+- Lab 24 March
+- Lab 31 March
