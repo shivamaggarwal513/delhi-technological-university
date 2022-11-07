@@ -8,3 +8,5 @@
   - [OOP Lab](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%203/OOP%20Lab)
 - Semester 4
   - [Operating Systems Lab](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%204/Operating%20Systems%20Lab)
+- Semester 5
+  - [Probability and Statistics](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%205/Probability%20and%20Statistics)
