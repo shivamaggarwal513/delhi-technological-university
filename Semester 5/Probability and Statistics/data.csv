@@ -1,0 +1,15 @@
+Genre,Outlook,Subtitles,Language,Watch
+Action,Sunny,Yes,English,No
+Romance,Overcast,No,Hindi,No
+Romance,Overcast,No,English,Yes
+Comedy,Sunny,Yes,Hindi,No
+Comedy,Overcast,Yes,English,No
+Action,Rainy,No,Hindi,No
+Romance,Sunny,Yes,English,Yes
+Action,Rainy,Yes,Hindi,Yes
+Action,Overcast,No,English,No
+Romance,Sunny,Yes,Hindi,No
+Comedy,Rainy,No,Hindi,Yes
+Romance,Overcast,Yes,Hindi,No
+Comedy,Rainy,No,English,Yes
+Comedy,Overcast,No,Hindi,Yes
