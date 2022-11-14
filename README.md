@@ -11,3 +11,4 @@
 - Semester 5
   - [Machine Learning](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%205/Machine%20Learning)
   - [Probability and Statistics](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%205/Probability%20and%20Statistics)
+  - [Software Engineering](https://github.com/shivamaggarwal513/Delhi-Technological-University/tree/main/Semester%205/Software%20Engineering)

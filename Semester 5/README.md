@@ -15,3 +15,6 @@
 - Probability and Statistics
   - Naïve Bayes Classifier
   - Statistics
+
+- Software Engineering
+  - Constructive Cost Model
