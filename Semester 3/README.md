@@ -3,7 +3,7 @@
 - Data Structures
   - [Arrays](./Data%20Structures/01%20Arrays)
   - [Linked Lists](./Data%20Structures/02%20Linked%20Lists)
-  - [Queues](./Data%20Structures/03%20Queues)
+
 - Data Structures Lab
   - [Lab 02 August](./Data%20Structures%20Lab/01%20Lab%2002%20Aug)
   - [Lab 09 August](./Data%20Structures%20Lab/02%20Lab%2009%20Aug)
@@ -17,6 +17,7 @@
   - [Lab 25 October](./Data%20Structures%20Lab/10%20Lab%2025%20Oct)
   - [Lab 01 November](./Data%20Structures%20Lab/11%20Lab%2001%20Nov)
   - [Lab 08 November](./Data%20Structures%20Lab/12%20Lab%2008%20Nov)
+
 - OOP Lab
   - [C++](./OOP%20Lab/CPP)
   - [Java](./OOP%20Lab/Java)

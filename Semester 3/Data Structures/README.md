@@ -2,4 +2,3 @@
 
 - Arrays
 - Linked Lists
-- Queues
