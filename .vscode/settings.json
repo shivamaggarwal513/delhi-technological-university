@@ -20,6 +20,15 @@
         "xutility": "cpp",
         "cmath": "cpp",
         "limits": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "map": "cpp",
+        "set": "cpp",
+        "ios": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "xtree": "cpp",
+        "thread": "cpp",
+        "forward_list": "cpp"
     }
 }
