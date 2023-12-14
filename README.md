@@ -19,3 +19,9 @@
 - Semester 6
   - [Compiler Design](./Semester%206/Compiler%20Design)
   - [Computer Networks](./Semester%206/Computer%20Networks)
+
+- Semester 7
+  - [Advanced Data Structures](./Semester%207/Advanced%20Data%20Structures)
+  - [Information and Network Security](./Semester%207/Information%20and%20Network%20Security)
+  - [Neural Networks](./Semester%207/Neural%20Networks)
+  - [Reinforcement Learning](./Semester%207/Reinforcement%20Learning)
