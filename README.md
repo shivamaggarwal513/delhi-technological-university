@@ -25,3 +25,6 @@
   - [Information and Network Security](./Semester%207/Information%20and%20Network%20Security)
   - [Neural Networks](./Semester%207/Neural%20Networks)
   - [Reinforcement Learning](./Semester%207/Reinforcement%20Learning)
+
+- Semester 8
+  - [Deep Learning](./Semester%208/Deep%20Learning)
